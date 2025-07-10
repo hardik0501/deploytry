@@ -3,6 +3,7 @@ import { config } from "@/data/config";
 import { Resend } from "resend";
 import { z } from "zod";
 
+// Make sure to set RESEND_API_KEY in your .env.local file at the project root
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 const Email = z.object({

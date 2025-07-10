@@ -23,7 +23,7 @@ const Index: React.FC<IndexProps> = ({ src, isActive }) => {
         width={400}
         height={400}
         className="my-32 w-full h-auto object-cover"
-        alt={"Image"}
+        alt={src ? src.split('/').pop()?.replace(/[-_]/g, ' ').replace(/\..+$/, '') || 'Navigation image' : 'Navigation image'}
         // priority={true}
       />
     </motion.div>
